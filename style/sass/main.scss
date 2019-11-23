@@ -1,4 +1,25 @@
+.cover {
+  padding: 5% 0 5% 0;
+  .title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 25px 0px 25px 0px;
+  }
+  .date {
+    margin: 25px 0px 25px 0px;
+  }
+  .organized {
+    margin: 30px 0px 30px 0px;
+  }
+}
+
 .about {
+  padding: 5% 0 5% 0;
+  .about-para {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
   .about-img {
     img {
       width: 100%;
@@ -7,10 +28,31 @@
 }
 
 .events {
+  padding: 5% 0 5% 0;
   .card-header {
     padding: 0;
     img {
       width: 100%;
     }
   }
+}
+
+.schedule {
+  padding: 5% 0 5% 0;
+}
+
+.guest {
+  padding: 5% 0 5% 0;
+}
+
+.contact {
+  padding: 5% 0 5% 0;
+}
+
+.map {
+  padding: 5% 0 5% 0;
+}
+
+.sponsors {
+  padding: 5% 0 5% 0;
 }
