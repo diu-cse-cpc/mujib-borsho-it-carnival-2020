@@ -21,7 +21,8 @@
         <nav class="navbar first-navigation-bar">
           <a href="#"><i class="fas fa-envelope"></i> mujibborshoitc2020@gmail.com</a>
           <a href="#"><i class="fas fa-phone-alt"></i> +8801624350761</a>
-          <a href="https://www.facebook.com/events/2702442296443735/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/events/2702442296443735/" target="_blank"><i
+              class="fab fa-facebook"></i></a>
         </nav>
         <!-- =============== End Nav Contact ================ -->
 
@@ -71,7 +72,7 @@
         <div class="timer">
           <!-- <h1>Registration is open for</h1>
           <p id="demo"></p> -->
-          
+
           <div class="container">
             <ul>
               <li class="timer-list"><span id="days"></span>days</li>
@@ -235,15 +236,15 @@
         <!-- =============== Start Schedule ================= -->
         <div class="schedule text-center" id="schedule">
           <h1 class="schedule-title my-3">Schedule</h1>
-          
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="./img/_schedule/Slide1.jpeg" alt="schedule" class="schedule-img" width="100%">
-                </div>
-                <div class="col-md-6">
-                  <img src="./img/_schedule/Slide2.jpeg" alt="schedule" class="schedule-img" width="100%">
-                </div>
+
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/_schedule/Slide1.jpeg" alt="schedule" class="schedule-img" width="100%">
+              </div>
+              <div class="col-md-6">
+                <img src="./img/_schedule/Slide2.jpeg" alt="schedule" class="schedule-img" width="100%">
+              </div>
             </div>
           </div>
         </div>
@@ -291,16 +292,20 @@
           <h1 class="guest-title my-3">Committee</h1>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#a" role="tab" aria-controls="home" aria-selected="true">Patrons</a>
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#a" role="tab" aria-controls="home"
+                aria-selected="true">Patrons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#b" role="tab" aria-controls="profile" aria-selected="false">Chief Advisor</a>
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#b" role="tab" aria-controls="profile"
+                aria-selected="false">Chief Advisor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#c" role="tab" aria-controls="contact" aria-selected="false">Advisors</a>
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#c" role="tab" aria-controls="contact"
+                aria-selected="false">Advisors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#d" role="tab" aria-controls="contact" aria-selected="false">Convener</a>
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#d" role="tab" aria-controls="contact"
+                aria-selected="false">Convener</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
@@ -384,7 +389,9 @@
                 <i class="fas fa-phone-alt"></i>
                 <h3>Phone Number</h3>
                 <p>Cell: +8801624350761, +8801738209131</p>
-                <p><br><strong>If You Face Any Complexity</strong> <br>Mehedi Hasan Likhon<br>President, DIU CPC<br>Mobile: +8801624350761<br>Email: <a href="mailto:mehedi.hasansjs@gmail.com">mehedi.hasansjs@gmail.com</a>
+                <p><br><strong>If You Face Any Complexity</strong> <br>Mehedi Hasan Likhon<br>President, DIU
+                  CPC<br>Mobile: +8801624350761<br>Email: <a
+                    href="mailto:mehedi.hasansjs@gmail.com">mehedi.hasansjs@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -439,58 +446,30 @@
   <script src="./js/main.js"></script>
 
   <script>
-    // // Set the date we're counting down to
-    // var countDownDate = new Date("Jan 12, 2020 23:59:59").getTime();
-    
-    // // Update the count down every 1 second
-    // var x = setInterval(function() {
-    
-    //   // Get today's date and time
-    //   var now = new Date().getTime();
-        
-    //   // Find the distance between now and the count down date
-    //   var distance = countDownDate - now;
-        
-    //   // Time calculations for days, hours, minutes and seconds
-    //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    //   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    //   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    //   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-    //   // Output the result in an element with id="demo"
-    //   document.getElementById("demo").innerHTML = days + "D " + hours + "H "
-    //   + minutes + "M " + seconds + "S ";
-        
-    //   // If the count down is over, write some text 
-    //   if (distance < 0) {
-    //     clearInterval(x);
-    //     document.getElementById("demo").innerHTML = "EXPIRED";
-    //   }
-    // }, 1000);
-
     const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Jan 12, 2020 00:00:00').getTime(),
-    x = setInterval(function() {
+    let countDown = new Date('Jan 12, 2020 23:59:59').getTime(),
+      x = setInterval(function () {
 
-      let now = new Date().getTime(),
+        let now = new Date().getTime(),
           distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
+        document.getElementById('days').innerText = Math.floor(distance / (day)),
+          document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
-    }, second)
-    </script>
+        //do something later when date is reached
+        //if (distance < 0) {
+        //  clearInterval(x);
+        //  'IT'S MY BIRTHDAY!;
+        //}
+
+      }, second)
+  </script>
 </body>
+
 </html>
